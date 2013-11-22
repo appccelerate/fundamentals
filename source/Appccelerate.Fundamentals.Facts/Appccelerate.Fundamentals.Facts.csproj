@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Appccelerate</RootNamespace>
-    <AssemblyName>Appccelerate.Fundamentals.Tests</AssemblyName>
+    <AssemblyName>Appccelerate.Fundamentals.Facts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

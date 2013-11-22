@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals.Specs", "Appccelerate.Fundamentals.Specs\Appccelerate.Fundamentals.Specs.csproj", "{BC0603F8-CFC7-4747-93B6-A8DFFDD229D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals.Tests", "Appccelerate.Fundamentals.Tests\Appccelerate.Fundamentals.Tests.csproj", "{E659E50A-AFB2-4FCC-BCC9-D4D4EF3077C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals.Facts", "Appccelerate.Fundamentals.Facts\Appccelerate.Fundamentals.Facts.csproj", "{E659E50A-AFB2-4FCC-BCC9-D4D4EF3077C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
