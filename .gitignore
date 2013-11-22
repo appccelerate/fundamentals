@@ -13,3 +13,4 @@ source/Appccelerate.1.2.dotCover
 *.orig
 source/Appccelerate.sln.DotSettings
 src/packages/*
+logs/ripple.log
