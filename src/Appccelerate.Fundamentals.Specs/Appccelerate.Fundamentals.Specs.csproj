@@ -28,7 +28,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>	
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions">
@@ -57,14 +57,14 @@
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Appccelerate.Fundamentals\Appccelerate.Fundamentals.csproj">
-      <Project>{ea4d4afe-4c1a-41be-aa64-67bb161dd6bb}</Project>
-      <Name>Appccelerate.Fundamentals2</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ripple.dependencies.config" />
     <None Include="Settings.stylecop" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Appccelerate.Fundamentals\Appccelerate.Fundamentals.csproj">
+      <Project>{ea4d4afe-4c1a-41be-aa64-67bb161dd6bb}</Project>
+      <Name>Appccelerate.Fundamentals</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)..\tools\ripple\RippleRestoreTask.targets" />
