@@ -43,7 +43,6 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="Appccelerate.snk" />
     <None Include="ripple.dependencies.config" />
-    <None Include="Settings.stylecop" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ensure.cs" />
