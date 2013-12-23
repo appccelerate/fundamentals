@@ -29,6 +29,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions">
@@ -78,6 +80,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)..\tools\ripple\RippleRestoreTask.targets" />
   <Import Project="$(SolutionDir)..\tools\gitflowversion\build\GitFlowVersionTask.targets" />
+  <Import Project="$(SolutionDir)..\Tools\StyleCopMsBuildTask\StyleCop.targets"/>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -85,10 +88,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
-  <UsingTask
-      AssemblyFile="$(OutputPath)xunit.runner.msbuild.dll"
-      TaskName="Xunit.Runner.MSBuild.xunit"/>
+  <UsingTask AssemblyFile="$(OutputPath)xunit.runner.msbuild.dll" TaskName="Xunit.Runner.MSBuild.xunit" />
   <Target Name="AfterBuild">
     <xunit Condition="'$(Configuration)' == 'Release'" Assembly="$(OutputPath)$(AssemblyName).dll" />
   </Target>
