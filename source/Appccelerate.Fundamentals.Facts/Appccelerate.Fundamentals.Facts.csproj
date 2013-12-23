@@ -85,4 +85,11 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+
+  <UsingTask
+      AssemblyFile="$(OutputPath)xunit.runner.msbuild.dll"
+      TaskName="Xunit.Runner.MSBuild.xunit"/>
+  <Target Name="AfterBuild">
+    <xunit Condition="'$(Configuration)' == 'Release'" Assembly="$(OutputPath)$(AssemblyName).dll" />
+  </Target>
 </Project>
