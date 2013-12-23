@@ -24,6 +24,7 @@ namespace Appccelerate.Events
 
     using Machine.Specifications;
 
+    [Subject("Generic event arguments")]
     public class When_firing_generic_event_args
     {
         const int Value = 42;

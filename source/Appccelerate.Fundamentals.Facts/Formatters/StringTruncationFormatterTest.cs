@@ -79,6 +79,7 @@ namespace Appccelerate.Formatters
         public void NullValue()
         {
             Assert.Throws<ArgumentNullException>(
+                // ReSharper disable once AssignNullToNotNullAttribute
                 () => string.Format(new StringTruncationFormatter(), "{0:L10}", null));
         }
 
