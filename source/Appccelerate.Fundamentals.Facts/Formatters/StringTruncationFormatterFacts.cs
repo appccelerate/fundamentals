@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------
-// <copyright file="StringTruncationFormatterTest.cs" company="Appccelerate">
+// <copyright file="StringTruncationFormatterFacts.cs" company="Appccelerate">
 //   Copyright (c) 2008-2013
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,12 +19,10 @@
 namespace Appccelerate.Formatters
 {
     using System;
-
     using FluentAssertions;
-
     using Xunit;
 
-    public class StringTruncationFormatterTest
+    public class StringTruncationFormatterFacts
     {
         [Fact]
         public void WithoutLength()
@@ -83,7 +81,7 @@ namespace Appccelerate.Formatters
                 () => string.Format(new StringTruncationFormatter(), "{0:L10}", null));
         }
 
-        public class TestClassNotFormattable
+        private class TestClassNotFormattable
         {
             public override string ToString()
             {
@@ -91,7 +89,7 @@ namespace Appccelerate.Formatters
             }
         }
 
-        public class TestClassFormattable : IFormattable
+        private class TestClassFormattable : IFormattable
         {
             public string ToString(string format, IFormatProvider formatProvider)
             {

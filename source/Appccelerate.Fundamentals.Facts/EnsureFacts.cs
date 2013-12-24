@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------
-// <copyright file="EnsureTest.cs" company="Appccelerate">
+// <copyright file="EnsureFacts.cs" company="Appccelerate">
 //   Copyright (c) 2008-2013
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,7 @@ namespace Appccelerate
 
     using Xunit;
 
-    public class EnsureTest
+    public class EnsureFacts
     {
         [Fact]
         public void ArgumentNotNull_WhenArgumentNull_MustThrow()

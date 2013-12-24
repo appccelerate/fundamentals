@@ -1,5 +1,5 @@
 ﻿//-------------------------------------------------------------------------------
-// <copyright file="TypeExtensionsTest.cs" company="Appccelerate">
+// <copyright file="TypeExtensionsFacts.cs" company="Appccelerate">
 //   Copyright (c) 2008-2013
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ namespace Appccelerate.Formatters
     using FluentAssertions;
     using Xunit.Extensions;
 
-    public class TypeExtensionsTest
+    public class TypeExtensionsFacts
     {
         [Theory]
         [InlineData(

@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------
-// <copyright file="FormatHelperTest.cs" company="Appccelerate">
+// <copyright file="FormatHelperFacts.cs" company="Appccelerate">
 //   Copyright (c) 2008-2013
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@ namespace Appccelerate.Formatters
 
     using Xunit;
 
-    public class FormatHelperTest
+    public class FormatHelperFacts
     {
         [Fact]
         public void SecureFormat_ReturnsFormattedString_WhenTooManyParameters()
@@ -81,14 +81,14 @@ namespace Appccelerate.Formatters
         }
 
         [Fact]
-        public void ConvertCollectionToString()
+        public void ConvertsCollectionToString()
         {
             string s = FormatHelper.ConvertToString(new object[] { 3, "hello", new Exception("exception") }, ", ");
             s.Should().Be("3, hello, System.Exception: exception");
         }
 
         [Fact]
-        public void ConvertDictionaryToString()
+        public void ConvertsDictionaryToString()
         {
             IDictionary<object, object> dictionary = new Dictionary<object, object>();
             dictionary.Add("bla", "haha");
