@@ -21,6 +21,6 @@
   </metadata>
   <files>
     <file src="..\..\binaries\Release\Appccelerate.Fundamentals.dll" target="lib\net45" />
-    <!--<file src="..\..\src\Appccelerate.Fundamentals\**\*.cs" target="src" />-->
+    <file src="..\..\source\Appccelerate.Fundamentals\**\*.cs" target="src" />
   </files>  
 </package>
