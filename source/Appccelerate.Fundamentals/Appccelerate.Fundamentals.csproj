@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="Appccelerate.Public.snk" />
     <None Include="Appccelerate.snk" />
     <None Include="packages.config" />
     <None Include="ripple.dependencies.config" />
@@ -88,4 +89,5 @@
   <Import Project="..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets" Condition="Exists('..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets')" />
   <Import Project="..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets" Condition="Exists('..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets')" />
   <Import Project="..\packages\Appccelerate.Development.0.1\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.1\build\Appccelerate.development.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.ProductionCode.0.4\build\Appccelerate.development.ProductionCode.targets" Condition="Exists('..\packages\Appccelerate.Development.ProductionCode.0.4\build\Appccelerate.development.ProductionCode.targets')" />
 </Project>
