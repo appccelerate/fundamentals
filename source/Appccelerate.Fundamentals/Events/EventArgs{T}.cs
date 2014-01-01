@@ -27,17 +27,12 @@ namespace Appccelerate.Events
     public class EventArgs<T> : EventArgs
     {
         /// <summary>
-        /// The contained value.
-        /// </summary>
-        private readonly T value;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="EventArgs{T}"/> class.
         /// </summary>
         /// <param name="value">The value.</param>
         public EventArgs(T value)
         {
-            this.value = value;
+            this.Value = value;
         }
 
         /// <summary>
@@ -45,7 +40,7 @@ namespace Appccelerate.Events
         /// </summary>
         public T Value
         {
-            get { return this.value; }
+            get; private set;
         }
     }
 }

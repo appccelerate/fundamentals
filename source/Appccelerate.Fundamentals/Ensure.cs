@@ -19,7 +19,6 @@
 namespace Appccelerate
 {
     using System;
-    using System.ComponentModel;
     using System.Diagnostics;
     using System.Globalization;
     using System.Reflection;
@@ -61,10 +60,10 @@ namespace Appccelerate
         /// <exception cref="ArgumentException">The <paramref name="argumentValue"/> parameter is an empty string.</exception>
         public static void ArgumentNotNullOrEmpty([ValidatedNotNull] string argumentValue, string argumentName)
         {
-            Ensure.ArgumentNotNull(argumentValue, argumentName);
+            ArgumentNotNull(argumentValue, argumentName);
             if (argumentValue.Length == 0)
             {
-                throw new ArgumentException(Ensure.StringMustNotBeEmpty, argumentName);
+                throw new ArgumentException(StringMustNotBeEmpty, argumentName);
             }
         }
 
@@ -79,7 +78,7 @@ namespace Appccelerate
         {
             if (argumentValue < 0)
             {
-                throw new ArgumentOutOfRangeException(argumentName, argumentValue, Ensure.NumberMustNotBeNegative);
+                throw new ArgumentOutOfRangeException(argumentName, argumentValue, NumberMustNotBeNegative);
             }
         }
 
@@ -98,12 +97,12 @@ namespace Appccelerate
         public static void ArgumentAssignableFrom<T>(Type targetType, [ValidatedNotNull] T argumentValue, string argumentName)
             where T : class
         {
-            Ensure.ArgumentNotNull(targetType, "targetType");
-            Ensure.ArgumentNotNull(argumentValue, argumentName);
+            ArgumentNotNull(targetType, "targetType");
+            ArgumentNotNull(argumentValue, argumentName);
 
             if (!targetType.GetTypeInfo().IsAssignableFrom(argumentValue.GetType().GetTypeInfo()))
             {
-                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, Ensure.ArgumentMustBeAssignable, targetType), argumentName);
+                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, ArgumentMustBeAssignable, targetType), argumentName);
             }
         }
 
@@ -120,12 +119,12 @@ namespace Appccelerate
         /// <exception cref="ArgumentException">The <paramref name="argumentValue"/> is not assignable to the <paramref name="targetType"/>.</exception>
         public static void ArgumentTypeAssignableFrom(Type targetType, [ValidatedNotNull] Type argumentValue, string argumentName)
         {
-            Ensure.ArgumentNotNull(targetType, "targetType");
-            Ensure.ArgumentNotNull(argumentValue, argumentName);
+            ArgumentNotNull(targetType, "targetType");
+            ArgumentNotNull(argumentValue, argumentName);
 
             if (!targetType.GetTypeInfo().IsAssignableFrom(argumentValue.GetTypeInfo()))
             {
-                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, Ensure.TypeMustBeAssignable, argumentValue, targetType), argumentName);
+                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, TypeMustBeAssignable, argumentValue, targetType), argumentName);
             }
         }
 
@@ -140,7 +139,7 @@ namespace Appccelerate
         /// <exception cref="ArgumentOutOfRangeException">The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void ArgumentInRange(bool condition, string message)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
@@ -164,7 +163,7 @@ namespace Appccelerate
         /// <exception cref="ArgumentOutOfRangeException">The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void ArgumentInRange<T>(bool condition, T argumentValue, string argumentName, string message)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
@@ -183,7 +182,7 @@ namespace Appccelerate
         /// - or - The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void ArgumentMatches(bool condition, string message)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
@@ -207,7 +206,7 @@ namespace Appccelerate
         /// - or - The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void ArgumentMatches<T>(bool condition, T argumentValue, string argumentName, string message)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
@@ -225,8 +224,8 @@ namespace Appccelerate
         /// <exception cref="InvalidOperationException">This exception is always thrown.</exception>
         public static void OperationNotValid(string message, params object[] arguments)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
-            Ensure.OperationValid(false, message, arguments);
+            ArgumentNotNullOrEmpty(message, "message");
+            OperationValid(false, message, arguments);
         }
 
         /// <summary>
@@ -241,7 +240,7 @@ namespace Appccelerate
         /// <exception cref="InvalidOperationException">The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void OperationValid(bool condition, string message, params object[] arguments)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
@@ -265,7 +264,7 @@ namespace Appccelerate
         /// <exception cref="NotSupportedException">This exception is always thrown.</exception>
         public static void OperationNotSupported(string message, params object[] arguments)
         {
-            Ensure.OperationSupported(false, message, arguments);
+            OperationSupported(false, message, arguments);
         }
 
         /// <summary>
@@ -280,7 +279,7 @@ namespace Appccelerate
         /// <exception cref="NotSupportedException">The <paramref name="condition"/> evaluates to <c>false</c>.</exception>
         public static void OperationSupported(bool condition, string message, params object[] arguments)
         {
-            Ensure.ArgumentNotNullOrEmpty(message, "message");
+            ArgumentNotNullOrEmpty(message, "message");
 
             if (!condition)
             {
