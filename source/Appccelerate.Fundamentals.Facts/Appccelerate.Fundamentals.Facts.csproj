@@ -109,6 +109,6 @@
     <PrepareForBuildDependsOn Condition="!Exists('$(StyleCopMSBuildTargetsFile)')">StyleCopMSBuildTargetsNotFound;$(PrepareForBuildDependsOn)</PrepareForBuildDependsOn>
   </PropertyGroup>
   <Import Project="..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets" Condition="Exists('..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.Facts.0.5\build\Appccelerate.Development.Facts.targets" Condition="Exists('..\packages\Appccelerate.Development.Facts.0.5\build\Appccelerate.Development.Facts.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.Facts.0.6\build\Appccelerate.Development.Facts.targets" Condition="Exists('..\packages\Appccelerate.Development.Facts.0.6\build\Appccelerate.Development.Facts.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.0.6\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.6\build\Appccelerate.development.targets')" />
 </Project>

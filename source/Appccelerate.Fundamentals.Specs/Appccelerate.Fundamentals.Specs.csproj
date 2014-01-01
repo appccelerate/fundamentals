@@ -97,6 +97,6 @@
   </PropertyGroup>
   <Import Project="..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets" Condition="Exists('..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets')" />
   <Import Project="..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets" Condition="Exists('..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.Specs.0.5\build\Appccelerate.Development.Specs.targets" Condition="Exists('..\packages\Appccelerate.Development.Specs.0.5\build\Appccelerate.Development.Specs.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.0.6\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.6\build\Appccelerate.development.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.Specs.0.6\build\Appccelerate.Development.Specs.targets" Condition="Exists('..\packages\Appccelerate.Development.Specs.0.6\build\Appccelerate.Development.Specs.targets')" />
 </Project>
