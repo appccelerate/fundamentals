@@ -37,12 +37,14 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Appccelerate.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="Appccelerate.Public.snk" />
     <None Include="Appccelerate.snk" />
+    <None Include="NuGet.config" />
     <None Include="packages.config" />
     <None Include="ripple.dependencies.config" />
   </ItemGroup>
@@ -53,7 +55,6 @@
     <Compile Include="Formatters\StringTruncationFormatter.cs" />
     <Compile Include="Formatters\TypeExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="ValidatedNotNullAttribute.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
@@ -89,6 +90,6 @@
   </PropertyGroup>
   <Import Project="..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets" Condition="Exists('..\packages\GitFlowVersionTask.0.14.0\Build\GitFlowVersionTask.targets')" />
   <Import Project="..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets" Condition="Exists('..\packages\RippleRestoreTask.0.1.4\build\RippleRestoreTask.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.0.1\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.1\build\Appccelerate.development.targets')" />
-  <Import Project="..\packages\Appccelerate.Development.ProductionCode.0.4\build\Appccelerate.development.ProductionCode.targets" Condition="Exists('..\packages\Appccelerate.Development.ProductionCode.0.4\build\Appccelerate.development.ProductionCode.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.ProductionCode.0.5\build\Appccelerate.development.ProductionCode.targets" Condition="Exists('..\packages\Appccelerate.Development.ProductionCode.0.5\build\Appccelerate.development.ProductionCode.targets')" />
+  <Import Project="..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets" Condition="Exists('..\packages\Appccelerate.Development.0.5\build\Appccelerate.development.targets')" />
 </Project>
