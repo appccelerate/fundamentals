@@ -14,16 +14,16 @@
     <description>Provides common types and functionality for other Appccelerate packages.</description>
     <copyright>Copyright 2012-2014</copyright>
     <tags>Appccelerate</tags>
-	<frameworkAssemblies>
+    <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="portable-windows8+net45" />
       <frameworkAssembly assemblyName="System.Core" targetFramework="portable-windows8+net45" />
     </frameworkAssemblies>
     <dependencies/>	
   </metadata>
   <files>
-    <file src="Appccelerate.Fundamentals\bin\Release\Appccelerate.Fundamentals.dll" target="lib\portable-windows8+net45" />
-    <file src="Appccelerate.Fundamentals\bin\Release\Appccelerate.Fundamentals.pdb" target="lib\portable-windows8+net45" />
-    <file src="Appccelerate.Fundamentals\bin\Release\Appccelerate.Fundamentals.xml" target="lib\portable-windows8+net45" />
-    <file src="Appccelerate.Fundamentals\**\*.cs" target="src" />
+    <file src="bin\Release\Appccelerate.Fundamentals.dll" target="lib\portable-windows8+net45" />
+    <file src="bin\Release\Appccelerate.Fundamentals.pdb" target="lib\portable-windows8+net45" />
+    <file src="bin\Release\Appccelerate.Fundamentals.xml" target="lib\portable-windows8+net45" />
+    <file src="**\*.cs" target="src" />
   </files>  
 </package>
