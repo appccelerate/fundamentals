@@ -21,9 +21,9 @@
     <dependencies/>	
   </metadata>
   <files>
-    <file src="bin\Release\Appccelerate.Fundamentals.dll" target="lib\portable-windows8+net45" />
-    <file src="bin\Release\Appccelerate.Fundamentals.pdb" target="lib\portable-windows8+net45" />
-    <file src="bin\Release\Appccelerate.Fundamentals.xml" target="lib\portable-windows8+net45" />
+    <file src="bin\Release\Appccelerate.Fundamentals.dll" target="lib\portable-windows8+net45+wp80" />
+    <file src="bin\Release\Appccelerate.Fundamentals.pdb" target="lib\portable-windows8+net45+wp80" />
+    <file src="bin\Release\Appccelerate.Fundamentals.xml" target="lib\portable-windows8+net45+wp80" />
     <file src="**\*.cs" target="src" />
   </files>  
 </package>
