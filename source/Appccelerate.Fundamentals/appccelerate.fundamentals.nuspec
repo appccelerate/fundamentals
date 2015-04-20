@@ -15,8 +15,8 @@
     <copyright>Copyright 2012-2015</copyright>
     <tags>Appccelerate</tags>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System" targetFramework="portable-windows8+net45" />
-      <frameworkAssembly assemblyName="System.Core" targetFramework="portable-windows8+net45" />
+      <frameworkAssembly assemblyName="System" targetFramework="portable-windows8+net45+wp80" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="portable-windows8+net45+wp80" />
     </frameworkAssemblies>
     <dependencies/>	
   </metadata>
