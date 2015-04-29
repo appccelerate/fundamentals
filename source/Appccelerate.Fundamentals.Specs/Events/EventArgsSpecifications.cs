@@ -22,32 +22,42 @@ namespace Appccelerate.Events
 
     using FluentAssertions;
 
-    using Machine.Specifications;
+    using Xbehave;
 
-    [Subject("Generic event arguments")]
-    public class When_firing_generic_event_args
+    public class GenericEventArguments
     {
-        const int Value = 42;
+        [Scenario]
+        public void FireGenericEventArgs(
+            Publisher publisher,
+            Subscriber subscriber)
+        {
+            const int Value = 42;
 
-        static Publisher publisher;
-        static Subscriber subscriber;
+            "establish a publisher firing an event with generic event args"._(() =>
+                {
+                    publisher = new Publisher();
+                });
 
-        Establish context = () =>
-            { 
-                publisher = new Publisher();
-                subscriber = new Subscriber();
+            "establish a subscriber listening to the event of the publisher"._(() =>
+                {
+                    subscriber = new Subscriber();
 
-                subscriber.RegisterEvent(publisher);
-            };
+                    subscriber.RegisterEvent(publisher);
+                });
 
-        Because of = () => 
-            publisher.FireEvent(Value);
+            "when the publisher fires the event"._(() =>
+                {
+                    publisher.FireEvent(Value);
+                });
 
-        It should_pass_value_to_event_handler = () =>
-            subscriber.ReceivedValue
-                .Should().Be(Value);
+            "it should pass value to event handler"._(() =>
+                {
+                    subscriber.ReceivedValue
+                        .Should().Be(Value);
+                });
+        }
 
-        private class Publisher
+        public class Publisher
         {
             public event EventHandler<EventArgs<int>> AnEvent = delegate { };
 
@@ -57,7 +67,7 @@ namespace Appccelerate.Events
             }
         }
 
-        private class Subscriber
+        public class Subscriber
         {
             public int ReceivedValue { get; private set; }
 

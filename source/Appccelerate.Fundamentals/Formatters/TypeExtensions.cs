@@ -34,7 +34,7 @@ namespace Appccelerate.Formatters
         /// <returns>A correctly formatted full name.</returns>
         public static string FullNameToString(this Type type)
         {
-            Ensure.ArgumentNotNull(type, "type");
+            Guard.AgainstNullArgument("type", type);
 
             if (!type.GetTypeInfo().IsGenericType)
             {

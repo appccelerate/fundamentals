@@ -90,7 +90,7 @@ namespace Appccelerate.Formatters
         /// <returns>String representation of the collection.</returns>
         public static string ConvertToString(IEnumerable collection, string separator)
         {
-            Ensure.ArgumentNotNull(separator, "seperator");
+            Guard.AgainstNullArgument("seperator", separator);
 
             StringBuilder sb = new StringBuilder();
             if (collection != null)
@@ -119,7 +119,7 @@ namespace Appccelerate.Formatters
         /// <returns>String representation of the dictionary</returns>
         public static string ConvertToString(IDictionary<object, object> dictionary, string separator)
         {
-            Ensure.ArgumentNotNull(separator, "seperator");
+            Guard.AgainstNullArgument("seperator", separator);
 
             StringBuilder sb = new StringBuilder();
             if (dictionary != null)

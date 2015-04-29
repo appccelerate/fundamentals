@@ -21,8 +21,9 @@ namespace Appccelerate.Formatters
     using System;
     using System.Collections.Generic;
     using FluentAssertions;
-    using Xunit.Extensions;
 
+    using Xunit;
+    
     public class TypeExtensionsFacts
     {
         [Theory]

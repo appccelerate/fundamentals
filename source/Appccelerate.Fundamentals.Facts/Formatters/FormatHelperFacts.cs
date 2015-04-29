@@ -21,6 +21,7 @@ namespace Appccelerate.Formatters
     using System;
     using System.Collections.Generic;
     using System.Globalization;
+    using System.Text.RegularExpressions;
 
     using FluentAssertions;
 
@@ -96,7 +97,7 @@ namespace Appccelerate.Formatters
             dictionary.Add("exception", new Exception("exception"));
 
             string s = FormatHelper.ConvertToString(dictionary, "; ");
-
+            
             s.Should().Be("bla=haha; 1=25; exception=System.Exception: exception");
         }
     }

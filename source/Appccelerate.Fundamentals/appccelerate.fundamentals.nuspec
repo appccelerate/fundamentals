@@ -14,6 +14,10 @@
     <description>Provides common types and functionality for other Appccelerate packages.</description>
     <copyright>Copyright 2012-2015</copyright>
     <tags>Appccelerate</tags>
+    <releaseNotes>
+      3.0: removed Ensure methods (we suggest to use LiteGuard instead)
+      2.14: support for Xamarin (PCL profile 78)
+    </releaseNotes>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="portable-windows8+net45+wp80" />
       <frameworkAssembly assemblyName="System.Core" targetFramework="portable-windows8+net45+wp80" />

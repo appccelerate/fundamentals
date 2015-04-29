@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals", "Appccelerate.Fundamentals\Appccelerate.Fundamentals.csproj", "{EA4D4AFE-4C1A-41BE-AA64-67BB161DD6BB}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appccelerate.Fundamentals.Facts", "Appccelerate.Fundamentals.Facts\Appccelerate.Fundamentals.Facts.csproj", "{E659E50A-AFB2-4FCC-BCC9-D4D4EF3077C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E66FC6D1-A01E-4703-BBA7-1846182B23C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CC0A02AD-A1D7-40B7-ADC6-13F20A1BBE86}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
