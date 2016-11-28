@@ -15,3 +15,6 @@ source/Appccelerate.sln.DotSettings
 source/packages/*
 logs/ripple.log
 Specs/
+source/.vs/*
+**/project.lock.json
+source/*/*.nuget.targets
