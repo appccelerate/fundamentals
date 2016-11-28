@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Appccelerate.Fundamentals\Appccelerate.Fundamentals.csproj">
-      <Project>{ea4d4afe-4c1a-41be-aa64-67bb161dd6bb}</Project>
+      <Project>{794407ac-d2e9-4702-b2dd-473eff53ed35}</Project>
       <Name>Appccelerate.Fundamentals</Name>
     </ProjectReference>
   </ItemGroup>

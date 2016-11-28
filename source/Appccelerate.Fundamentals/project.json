@@ -1,0 +1,12 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Appccelerate.CheckHintPathTask": "1.15.0",
+    "Appccelerate.VersionTask": "1.22.0",
+    "liteguard.source": "1.0.0",
+    "NETStandard.Library": "1.6.0"
+  },
+  "frameworks": {
+    "netstandard1.0": {}
+  }
+}
